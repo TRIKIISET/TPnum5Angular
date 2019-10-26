@@ -1,0 +1,7 @@
+<h2 class="text-center">Liste des livres</h2>
+<div class="container">
+<ul *ngFor="let liv of lesLivres; let i = index" class="list-group">
+   <app-livre [livre]="liv" [indexLivre]="i"></app-livre>
+</ul>
+<button (click)="onToutAnnuler()" class="btn btn-danger">Tout annuler</button>
+</div>

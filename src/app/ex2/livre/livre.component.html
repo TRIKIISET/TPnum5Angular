@@ -1,0 +1,20 @@
+<li [ngClass]="{'list-group-item':true,
+                'list-group-item-success': enPromo()
+                }">
+
+ <h4> {{livre.titre}}</h4>
+<div>
+    Auteur: {{livre.auteur}}
+    Prix: {{livre.prix}}
+
+</div>
+
+<div class="input-group-prepend">
+    <input type="number" [value]="livre.reduction" #red/>
+    <span class="input-group-text">%</span>
+    <button (click)="onPromo(red.value)" class="btn btn-success">Mettre en promo</button>
+    <button (click)="onAnnuler()" class="btn btn-danger">Annuler</button>
+  </div>
+<div *ngIf="enPromo()">Nouveau prix après la promotion {{prixPromotionnel}}</div>
+
+</li>
