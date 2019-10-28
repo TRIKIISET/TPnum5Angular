@@ -7,12 +7,12 @@ import { DateService } from '../date.service';
   styles: []
 })
 export class SecondComponent implements OnInit {
-date:Date = new Date();
-  constructor(dateService:DateService) { 
-   // this.date = dateService.dateJour();
+date:Date ;
+  constructor(private dateService:DateService) { 
   }
 
   ngOnInit() {
+        this.date = this.dateService.dateJour();
   }
 
 }

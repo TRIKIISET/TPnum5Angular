@@ -8,15 +8,13 @@ import { EmployeService } from '../employe.service';
 })
 export class AddEmployeComponent implements OnInit {
 
-employes;
   constructor(private employeService:EmployeService) {
-this.employes = employeService.employes;
+
    }
 
    onAjouter(nom:string)
    {
      this.employeService.addEmploye(nom);
-   
    }
 
   ngOnInit() {

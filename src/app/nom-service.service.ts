@@ -6,4 +6,9 @@ import { Injectable } from '@angular/core';
 export class NomServiceService {
 
   constructor() { }
+
+  date()
+  {
+    return new Date();
+  }
 }

@@ -5,7 +5,7 @@
  <h4> {{livre.titre}}</h4>
 <div>
     Auteur: {{livre.auteur}}
-    Prix: {{livre.prix}}
+    Prix: {{livre.prix}} Dt
 
 </div>
 
@@ -15,6 +15,8 @@
     <button (click)="onPromo(red.value)" class="btn btn-success">Mettre en promo</button>
     <button (click)="onAnnuler()" class="btn btn-danger">Annuler</button>
   </div>
-<div *ngIf="enPromo()">Nouveau prix après la promotion {{prixPromotionnel}}</div>
+<strong *ngIf="enPromo()">Nouveau prix après la promotion {{prixPromotionnel}} Dt</strong>
 
 </li>
+
+

@@ -6,14 +6,14 @@ import { Livre } from './Livre';
 })
 export class LivresService {
 
-  Livres = [ new Livre("pi15","Pivoine","Pearl Buck",27.8, new Date(1960,5,4),true),
-  new Livre("kh289","Khan El Khalili","Nejib Mahfoudh",14.5, new Date(1978,2,14), false),
-  new Livre("zid874","17 Ramadan","Jorgi Zaidane",8.6, new Date(1980,3,28),false)
+  Livres = [ new Livre("Pivoine","Pearl Buck",27.8),
+  new Livre("Khan El Khalili","Nejib Mahfoudh",14.5),
+  new Livre("17 Ramadan","Jorgi Zaidane",8.6)
   ];
 
-  mettreEnPromo(val:number, index:number)
+  mettreEnPromo(reduction:number, index:number)
   {
-    this.Livres[index].reduction = val;
+    this.Livres[index].reduction = reduction;
     return this.Livres[index].prix *(100-this.Livres[index].reduction)/100.0;
   }
 
@@ -27,7 +27,7 @@ export class LivresService {
     this.Livres.push(l);
   }
 
-  maz()
+  annulerReduction()
   {
     for (let l of this.Livres)
       l.reduction =0;

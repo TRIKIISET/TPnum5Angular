@@ -9,12 +9,12 @@ import {DateService} from '../date.service';
 export class PrincipalComponent implements OnInit {
 
   laDate: Date; 
-  constructor(private service:DateService) {
-    // Récupération de la date à partir du service
-    this.laDate = service.dateJour(); 
+  constructor(private dateService:DateService) {
    }
 
   ngOnInit() {
+        // Récupération de la date à partir du service
+        this.laDate = this.dateService.dateJour(); 
   }
 
 }

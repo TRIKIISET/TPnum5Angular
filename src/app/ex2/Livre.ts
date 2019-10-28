@@ -1,28 +1,10 @@
 export class Livre
 {
-    public get isbn(): string {
-        return this._isbn;
-    }
-    public set isbn(value: string) {
-        this._isbn = value;
-    }
     public get prix(): number {
         return this._prix;
     }
     public set prix(value: number) {
         this._prix = value;
-    }
-    public get traduit(): boolean {
-        return this._traduit;
-    }
-    public set traduit(value: boolean) {
-        this._traduit = value;
-    }
-    public get edition(): Date {
-        return this._edition;
-    }
-    public set edition(value: Date) {
-        this._edition = value;
     }
     public get reduction(): number {
         return this._reduction;
@@ -42,12 +24,9 @@ export class Livre
     public set titre(value: string) {
         this._titre = value;
     }
-    constructor(private _isbn: string,
-                private _titre: string,
+    constructor(private _titre: string,
                 private _auteur: string,
                 private _prix: number,
-                private _edition?: Date,
-                private _traduit?: boolean,
                 private _reduction?: number
                 )
                 {

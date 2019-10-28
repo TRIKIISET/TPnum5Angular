@@ -6,10 +6,12 @@ import { AppComponent } from './app.component';
 import { LivreComponent } from './ex2/livre/livre.component';
 import { ListLivresComponent } from './ex2/list-livres/list-livres.component';
 import { PrincipalComponent } from './application/principal/principal.component';
-import { EmployeComponent } from './ex1/employe/employe.component';
+import { ListEmployesComponent } from './ex1/list-employes/list-employes.component';
 import { AddEmployeComponent } from './ex1/add-employe/add-employe.component';
 import { FirstComponent } from './application/first/first.component';
 import { SecondComponent } from './application/second/second.component';
+import { EssaiComponent } from './essai/essai.component';
+
 
 
 
@@ -19,10 +21,11 @@ import { SecondComponent } from './application/second/second.component';
     LivreComponent,
     ListLivresComponent,
     PrincipalComponent,
-    EmployeComponent,
+    ListEmployesComponent,
     AddEmployeComponent,
     FirstComponent,
-    SecondComponent    
+    SecondComponent,
+    EssaiComponent    
   ],
   imports: [
     BrowserModule,
