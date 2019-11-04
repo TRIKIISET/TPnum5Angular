@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import {DateService} from '../date.service';
+import { TrialService } from 'src/app/essai/trial.service';
 
 @Component({
   selector: 'app-principal',

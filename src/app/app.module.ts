@@ -10,7 +10,9 @@ import { ListEmployesComponent } from './ex1/list-employes/list-employes.compone
 import { AddEmployeComponent } from './ex1/add-employe/add-employe.component';
 import { FirstComponent } from './application/first/first.component';
 import { SecondComponent } from './application/second/second.component';
-import { EssaiComponent } from './essai/essai.component';
+import { ExempleComponent } from './essai/exemple/exemple.component';
+import { EtudiantComponent } from './essai/etudiant/etudiant.component';
+
 
 
 
@@ -25,7 +27,8 @@ import { EssaiComponent } from './essai/essai.component';
     AddEmployeComponent,
     FirstComponent,
     SecondComponent,
-    EssaiComponent    
+    ExempleComponent,
+    EtudiantComponent  
   ],
   imports: [
     BrowserModule,

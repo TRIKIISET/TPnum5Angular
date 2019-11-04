@@ -1,0 +1,9 @@
+
+<h2>Ajout d'un étudiant</h2>
+<form>
+<input type="text" #nom/>
+<button (click)="onAddStudent(nom.value)">Ajouter</button>
+<ul>
+    <li *ngFor="let e of lesEtudiants">{{e}}</li>
+</ul>
+</form>
